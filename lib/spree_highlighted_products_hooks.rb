@@ -1,3 +1,3 @@
 class SpreeHighlightedProductsHooks < Spree::ThemeSupport::HookListener
-  # custom hooks go here
+  insert_after :homepage_sidebar_navigation, :partial => "shared/highlighted_products"
 end

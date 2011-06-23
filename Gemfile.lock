@@ -106,6 +106,8 @@ GEM
     guard-cucumber (0.5.0)
       cucumber (>= 0.10)
       guard (>= 0.4.0)
+    guard-rspec (0.4.0)
+      guard (>= 0.4.0)
     highline (1.5.1)
     i18n (0.5.0)
     jquery-rails (0.2.6)
@@ -214,6 +216,7 @@ DEPENDENCIES
   faker
   guard
   guard-cucumber
+  guard-rspec
   launchy
   nokogiri
   rcov

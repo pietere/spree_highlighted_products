@@ -1,0 +1,12 @@
+<% if get_highlighted_products.any? %>
+
+  <div id="highlighted-products">
+    <ul>
+      <% get_highlighted_products.each do |product|  -%>
+        <li>
+          <%= link_to product.name, product %>
+        </li>
+      <% end -%>
+    </ul>
+  </div>
+<% end %>

@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 group :development do
   gem 'guard'
   gem 'guard-cucumber'
+  gem 'guard-rspec'
 end
 
 group :test do
