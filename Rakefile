@@ -41,7 +41,9 @@ task :default => [ :spec ]
 
 desc "Regenerates a rails 3 app for testing"
 task :test_app do
-  require '../spree/lib/generators/spree/test_app_generator'
+  SPREE_PATH = ENV['SPREE_PATH']
+  raise "SPREE_PATH should be specified" unless SPREE_PATH
+  require File.join(SPREE_PATH, 'lib/generators/spree/test_app_generator')
   class SpreeHighlightedProductTestAppGenerator < Spree::Generators::TestAppGenerator
 
     def install_gems
