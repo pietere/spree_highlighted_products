@@ -1,13 +1,5 @@
-SpreeHighlightedProducts
-========================
+# spree_highlighted_products
 
-Introduction goes here.
+Allows to simple highlighting and listing of products
 
-
-Example
-=======
-
-Example goes here.
-
-
-Copyright (c) 2011 [name of extension creator], released under the New BSD License
+Copyright (c) 2011 [Zorros], released under the New BSD License
