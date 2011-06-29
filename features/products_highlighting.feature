@@ -8,5 +8,9 @@ Feature: Highlighted products
     When I go to the homepage
     Then I should see the products on the Highlighted section
 
+    @javascript
   Scenario: Admin sets a product as highlighted
-    Then pending
+    Given I am an administrator logged in
+    When I highlight a product
+    Then show me the page
+    Then I should see " has been successfully updated!"

@@ -5,7 +5,9 @@
 # files.
 
 ENV["RAILS_ROOT"] = 'spec/test_app'
+
 require 'capybara'
+require 'capybara-webkit'
 require 'cucumber/rails'
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
@@ -13,6 +15,7 @@ require 'cucumber/rails'
 # prefer to use XPath just remove this line and adjust any selectors in your
 # steps to use the XPath syntax.
 Capybara.default_selector = :css
+Capybara.javascript_driver = :webkit
 
 # By default, any exception happening in your Rails application will bubble up
 # to Cucumber so that your scenario will fail. This is a different from how 
