@@ -1,7 +1,8 @@
 <% if get_highlighted_products.any? %>
 
   <div id="highlighted-products">
-    <ul>
+    <h3><%= t('.highlighted_products') %></h3>
+    <ul class='navigation-list'>
       <% get_highlighted_products.each do |product|  -%>
         <li>
           <%= link_to product.name, product %>
